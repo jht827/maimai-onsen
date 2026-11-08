@@ -1,0 +1,220 @@
+{
+  "entities_appeared": [
+    {
+      "id": "chen_mo",
+      "type": "角色",
+      "mentions": ["陈默"],
+      "confidence": 0.99
+    },
+    {
+      "id": "zhang_kai",
+      "type": "角色",
+      "mentions": ["张凯"],
+      "confidence": 0.99
+    },
+    {
+      "id": "weibo_merchant_a",
+      "type": "角色",
+      "mentions": ["微博商人A"],
+      "confidence": 0.75,
+      "note": "融资方，微博认证用户，融资规模五百万人民币起"
+    },
+    {
+      "id": "forum_arcade_master",
+      "type": "角色",
+      "mentions": ["论坛机器大佬"],
+      "confidence": 0.7,
+      "note": "群聊中的资深玩家，讨论机器供货渠道"
+    }
+  ],
+  "entities_new": [
+    {
+      "suggested_id": "weibo_merchant_a",
+      "name": "微博商人A",
+      "type": "角色",
+      "tier": "配角",
+      "description": "乌蒙圈融资方，拟融资500万人民币，预期回报40个点"
+    },
+    {
+      "suggested_id": "forum_arcade_master",
+      "name": "论坛机器大佬",
+      "type": "角色",
+      "tier": "配角",
+      "description": "乌蒙圈资深玩家，提供机器供货链和地点选择建议"
+    }
+  ],
+  "state_deltas": [
+    {
+      "entity_id": "chen_mo",
+      "field": "location.current",
+      "old": "中国济南",
+      "new": "日本大阪"
+    },
+    {
+      "entity_id": "chen_mo",
+      "field": "status",
+      "old": "观望者",
+      "new": "决策者"
+    },
+    {
+      "entity_id": "chen_mo",
+      "field": "commitment_level",
+      "old": "考虑中",
+      "new": "已到达目标地"
+    }
+  ],
+  "entity_deltas": [
+    {
+      "entity_id": "chen_mo",
+      "action": "upsert",
+      "entity_type": "角色",
+      "is_protagonist": true,
+      "payload": {
+        "name": "陈默",
+        "status": "已到达日本大阪，面临融资决策",
+        "account_balance_cny": 3000000,
+        "location": "大阪日中酒店",
+        "timezone_condition": "时差颠倒，生物钟紊乱"
+      }
+    },
+    {
+      "entity_id": "zhang_kai",
+      "action": "upsert",
+      "entity_type": "角色",
+      "payload": {
+        "name": "张凯",
+        "relationship_to_protagonist": "搭档、在日本",
+        "status": "支持但担心",
+        "last_message": "已买机票？"
+      }
+    }
+  ],
+  "accepted_events": [
+    {
+      "event_id": "evt-ch2-001",
+      "chapter": 2,
+      "event_type": "character_state_changed",
+      "subject": "chen_mo",
+      "payload": {
+        "field": "location.current",
+        "old": "中国济南",
+        "new": "日本大阪",
+        "trigger": "陈默已到达大阪日中酒店，确认飞行完成"
+      }
+    },
+    {
+      "event_id": "evt-ch2-002",
+      "chapter": 2,
+      "event_type": "open_loop_created",
+      "subject": "allnet_upgrade_window",
+      "payload": {
+        "content": "AllNet新系统升级将带来两个月时间窗口，乌蒙国内版本彻底停更，日本仍有机会。这个窗口内的融资和机器部署能力决定后续竞争格局",
+        "loop_type": "市场机遇窗口",
+        "unanswered_question": "陈默能否在两个月窗口内完成融资和机器部署？",
+        "urgency": "极高",
+        "expected_payoff": "后续章节创业行动"
+      }
+    },
+    {
+      "event_id": "evt-ch2-003",
+      "chapter": 2,
+      "event_type": "open_loop_created",
+      "subject": "fusion_round_decision",
+      "payload": {
+        "content": "微博商人A发起500万人民币融资方案，预期回报40个点。陈默账户持有300万，是否参与融资决策成为关键",
+        "loop_type": "融资机遇",
+        "unanswered_question": "陈默会否投资融资方案？如何与其他玩家竞争？",
+        "urgency": "高",
+        "expected_payoff": "融资合作或独立创业选择的确定"
+      }
+    },
+    {
+      "event_id": "evt-ch2-004",
+      "chapter": 2,
+      "event_type": "relationship_changed",
+      "subject": "chen_mo",
+      "payload": {
+        "to_entity": "zhang_kai",
+        "relationship_type": "搭档确认",
+        "change": "通过发送'到'字确认已到日本，暗示准备行动",
+        "significance": "陈默打破沉默，向张凯确认赴日，标志决策已定"
+      }
+    },
+    {
+      "event_id": "evt-ch2-005",
+      "chapter": 2,
+      "event_type": "character_state_changed",
+      "subject": "chen_mo",
+      "payload": {
+        "field": "commitment_level",
+        "old": "计划阶段",
+        "new": "已付诸行动",
+        "detail": "陈默到达日本，投入300万资本，时差混乱中做出投资决策"
+      }
+    }
+  ],
+  "summary_text": "陈默到达大阪日中酒店，时差颠倒难眠。他发现微信群里乌蒙圈正因AllNet升级而陷入产业剧变：国内版本彻底停更，日本仍有两个月运营窗口。微博商人A发起500万融资方案，预期回报40个点，引发群内激烈讨论。陈默手握300万创业资本，在深夜迷茫与决策中摇摆。最终他向张凯发送'到'字，确认赴日承诺已定，隐含着投资决策的开始。整个产业如同失控列车，所有玩家被迫在窗口期内选择跳车或前行。",
+  "scenes": [
+    {
+      "index": 1,
+      "start_line": 1,
+      "end_line": 27,
+      "location": "大阪日中酒店房间",
+      "summary": "陈默抵达日本后时差颠倒，查看微信群里的停更消息和技术文档讨论",
+      "characters": ["chen_mo"],
+      "content": "设置了故事场景的地点和主角的困境"
+    },
+    {
+      "index": 2,
+      "start_line": 28,
+      "end_line": 43,
+      "location": "大阪日中酒店房间",
+      "summary": "陈默看到微博商人A的融资方案，面对300万创业资本的承诺和现实选择",
+      "characters": ["chen_mo"],
+      "content": "核心冲突：资本压力与决策困境"
+    },
+    {
+      "index": 3,
+      "start_line": 44,
+      "end_line": 70,
+      "location": "大阪日中酒店房间",
+      "summary": "陈默与张凯私聊，确认已到日本，群里讨论选址、工作签证等运营细节",
+      "characters": ["chen_mo", "zhang_kai"],
+      "content": "人物关系推进与行业信息碰撞"
+    },
+    {
+      "index": 4,
+      "start_line": 71,
+      "end_line": 84,
+      "location": "大阪日中酒店房间、大阪街道",
+      "summary": "陈默最终向张凯发送'到'字确认承诺，躺回床上面对大阪的晨光，表示决策已定",
+      "characters": ["chen_mo"],
+      "content": "收尾钩子：主角的沉默确认和心理定位"
+    }
+  ],
+  "scenes_chunked": 4,
+  "dominant_strand": "quest",
+  "timing_ms": {
+    "entity_extraction": 45,
+    "event_analysis": 120,
+    "scene_chunking": 30,
+    "validation": 25
+  },
+  "bottlenecks_top3": [
+    {
+      "issue": "张凯角色信息不足",
+      "location": "远距离沟通，缺少物理出现",
+      "mitigation": "后续章节中张凯应出现加深刻画"
+    },
+    {
+      "issue": "融资方案细节需补充",
+      "location": "微博商人A的合作方案仅提及融资规模和回报率",
+      "mitigation": "后续章节应展现具体投资条款和合作形式"
+    },
+    {
+      "issue": "日本市场环境未充分铺陈",
+      "location": "主要聚焦群聊讨论，缺少日本本地场景",
+      "mitigation": "建议后续章节中增加日本市场实地观察"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "schema_version": "story-system/v1",
+    "contract_type": "CHAPTER_BRIEF",
+    "generator_version": "phase1",
+    "chapter": 2
+  },
+  "override_allowed": {
+    "chapter_focus": "陈默买完票后无法入睡，逐步理解bytelocker硬盘加密和IP地理位置检测的真相，意识到灰产已死，但目光中闪现出技术思考的苗头"
+  },
+  "chapter_directive": {},
+  "dynamic_context": [
+    {
+      "编号": "SY-042",
+      "适用技能": "init|plan|write",
+      "分类": "设定",
+      "层级": "知识补充",
+      "关键词": "金手指获取|外挂来源|觉醒方式|继承系统|获得能力",
+      "意图与同义词": "金手指怎么得到|外挂来源怎么设计|主角凭什么拿到能力",
+      "适用题材": "玄幻|都市|科幻|悬疑",
+      "大模型指令": "先确定金手指来源和获取条件，再决定为什么偏偏落到主角手里，避免无缘无故天降外挂。",
+      "核心摘要": "金手指获取方式决定了它的命运感、偶然感和是否会引来别人觊觎。",
+      "详细展开": "觉醒、继承、交易、捡漏、绑定、祭品换取都可以，但来源越清楚，后续逻辑越稳。",
+      "设定类型": "金手指获取方式分级",
+      "数值控制边界": "至少明确来源类型|首次获得条件|主角特殊性|被夺走风险",
+      "与剧情交互方式": "用于设计开局钩子、竞争者、命运伏笔和能力归属冲突",
+      "毒点": "",
+      "_table": "金手指与设定",
+      "_priority_rank": 999,
+      "_reasoning_rule": "都市",
+      "_chapter_keyword_score": 0,
+      "_combined_rank_score": 0.0
+    }
+  ],
+  "source_trace": [
+    {
+      "table": "题材与调性推理",
+      "id": "GR-010",
+      "reason": "keyword_or_alias_match"
+    },
+    {
+      "table": "金手指与设定",
+      "id": "SY-042",
+      "summary": "金手指获取方式决定了它的命运感、偶然感和是否会引来别人觊觎。",
+      "reasoning_rule": "都市",
+      "priority_rank": 999,
+      "chapter_keyword_score": 0,
+      "combined_rank_score": 0.0,
+      "inject_target": "CHAPTER_BRIEF.writing_guidance"
+    }
+  ],
+  "reasoning": {
+    "genre": "都市",
+    "inject_target": "CHAPTER_BRIEF.writing_guidance",
+    "style_priority": "日常轻松 > 温情治愈 > 微妙张力",
+    "pacing_strategy": "慢节奏 情感铺垫长 冲突柔和"
+  }
+}

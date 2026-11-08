@@ -1,0 +1,143 @@
+{
+  "character_state": [
+    {
+      "id": "mem-character_state-06f06843000132f5",
+      "layer": "semantic",
+      "category": "character_state",
+      "subject": "chen_mo",
+      "field": "location.current",
+      "value": "日本大阪",
+      "payload": {
+        "old_value": "中国济南"
+      },
+      "status": "active",
+      "source_chapter": 2,
+      "evidence": [
+        "state_change:chen_mo:location.current:2"
+      ],
+      "updated_at": "2026-05-16T23:50:18"
+    },
+    {
+      "id": "mem-character_state-b589f2282d96e64b",
+      "layer": "semantic",
+      "category": "character_state",
+      "subject": "chen_mo",
+      "field": "status",
+      "value": "决策者",
+      "payload": {
+        "old_value": "观望者"
+      },
+      "status": "active",
+      "source_chapter": 2,
+      "evidence": [
+        "state_change:chen_mo:status:2"
+      ],
+      "updated_at": "2026-05-16T23:50:18"
+    },
+    {
+      "id": "mem-character_state-e55c23c543c58812",
+      "layer": "semantic",
+      "category": "character_state",
+      "subject": "chen_mo",
+      "field": "commitment_level",
+      "value": "已到达目标地",
+      "payload": {
+        "old_value": "考虑中"
+      },
+      "status": "active",
+      "source_chapter": 2,
+      "evidence": [
+        "state_change:chen_mo:commitment_level:2"
+      ],
+      "updated_at": "2026-05-16T23:50:18"
+    },
+    {
+      "id": "mem-character_state-ef3f7791378ac7c1",
+      "layer": "semantic",
+      "category": "character_state",
+      "subject": "chen_mo",
+      "field": "first_seen",
+      "value": "陈默",
+      "payload": {
+        "tier": "装饰",
+        "type": "角色"
+      },
+      "status": "active",
+      "source_chapter": 2,
+      "evidence": [
+        "entity_new:chen_mo:2"
+      ],
+      "updated_at": "2026-05-16T23:50:18"
+    },
+    {
+      "id": "mem-character_state-9b12a430c1386baf",
+      "layer": "semantic",
+      "category": "character_state",
+      "subject": "zhang_kai",
+      "field": "first_seen",
+      "value": "张凯",
+      "payload": {
+        "tier": "装饰",
+        "type": "角色"
+      },
+      "status": "active",
+      "source_chapter": 2,
+      "evidence": [
+        "entity_new:zhang_kai:2"
+      ],
+      "updated_at": "2026-05-16T23:50:18"
+    }
+  ],
+  "story_facts": [],
+  "world_rules": [],
+  "timeline": [],
+  "open_loops": [
+    {
+      "id": "mem-open_loop-8268683b36de0a42",
+      "layer": "semantic",
+      "category": "open_loop",
+      "subject": "AllNet新系统升级将带来两个月时间窗口，乌蒙国内版本彻底停更，日本仍有机会。这个窗口内的融资和机器部署能力决定后续竞争格局",
+      "field": "status",
+      "value": "AllNet新系统升级将带来两个月时间窗口，乌蒙国内版本彻底停更，日本仍有机会。这个窗口内的融资和机器部署能力决定后续竞争格局",
+      "payload": {
+        "urgency": "极高",
+        "planted_chapter": 2,
+        "expected_payoff": "后续章节创业行动",
+        "status": "active"
+      },
+      "status": "active",
+      "source_chapter": 2,
+      "evidence": [
+        "memory_facts:open_loop:2"
+      ],
+      "updated_at": "2026-05-16T23:50:18"
+    },
+    {
+      "id": "mem-open_loop-b6312dee5e0224c4",
+      "layer": "semantic",
+      "category": "open_loop",
+      "subject": "微博商人A发起500万人民币融资方案，预期回报40个点。陈默账户持有300万，是否参与融资决策成为关键",
+      "field": "status",
+      "value": "微博商人A发起500万人民币融资方案，预期回报40个点。陈默账户持有300万，是否参与融资决策成为关键",
+      "payload": {
+        "urgency": "高",
+        "planted_chapter": 2,
+        "expected_payoff": "融资合作或独立创业选择的确定",
+        "status": "active"
+      },
+      "status": "active",
+      "source_chapter": 2,
+      "evidence": [
+        "memory_facts:open_loop:2"
+      ],
+      "updated_at": "2026-05-16T23:50:18"
+    }
+  ],
+  "reader_promises": [],
+  "relationships": [],
+  "meta": {
+    "version": 1,
+    "last_updated": "2026-05-16T23:50:18",
+    "total_items": 7
+  }
+}

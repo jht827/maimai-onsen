@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "schema_version": "story-system/v1",
+    "chapter": 2,
+    "status": "accepted"
+  },
+  "contract_refs": {
+    "master": "MASTER_SETTING.json",
+    "volume": "volume_001.json",
+    "chapter": "chapter_002.json",
+    "review": "chapter_002.review.json"
+  },
+  "provenance": {
+    "write_fact_role": "chapter_commit",
+    "projection_role": "derived_read_models",
+    "legacy_state_role": "projection_only"
+  },
+  "outline_snapshot": {
+    "planned_nodes": [
+      "陈默到达大阪酒店",
+      "陈默查看微信群讨论",
+      "陈默发现机器升级消息",
+      "陈默思考融资机会",
+      "陈默与张凯沟通",
+      "陈默做出投资决定"
+    ],
+    "covered_nodes": [
+      "陈默到达大阪酒店",
+      "陈默查看微信群讨论",
+      "陈默发现机器升级消息",
+      "陈默思考融资机会",
+      "陈默与张凯沟通",
+      "陈默做出投资决定"
+    ],
+    "missed_nodes": [],
+    "extra_nodes": []
+  },
+  "review_result": {
+    "blocking_count": 0,
+    "issues": [
+      {
+        "severity": "high",
+        "category": "ai_flavor",
+        "location": "第7-39段（群聊部分）",
+        "description": "群聊对话完全为信息宣讲，无个人口癖、无冲突、无角色差异。每条信息都是独立背景补充，形成'问题-解答-新问题-解答'的标准闭环，逐步消解读者对陈默个人处境的关注。",
+        "evidence": "第11-18行对话：'这不科学啊'→'不是锁死，是物理销毁'→'那AllNet呢'→'别想了，IP地理位置绑定了'。群聊无个人语气差异，全为陈述式信息传输，如第25行'机器价格大约十二万日元一台'、第35-37行融资成本数据、第57行时间窗口确认等。整个群聊段落（第7-69行）无任何推进陈默内部冲突或决策焦虑的对话。",
+        "fix_hint": "删减或重组群聊，保留关键信息（灰产死亡、日本窗口期、融资机会），但改为陈默的视觉扫读或心理反应为主体，而非全文复述。或在群聊中插入陈默的实时反应——比如看到融资500万时的犹豫，或张凯沉默的压力——而非平铺所有信息。",
+        "blocking": false
+      },
+      {
+        "severity": "high",
+        "category": "ai_flavor",
+        "location": "第73行",
+        "description": "信息后跟随解释性判断，用'却'字建立评价框架，将陈默的资本和语言能力进行对比，形成叙者代替读者下结论的效果。",
+        "evidence": "原文：'五百万。预期回报率百分之四十。他看着自己的钱包，然后看向镜子里的自己——那个持有三百万、却连日语都说不好的人。'。'却'字暗示矛盾关系（有钱≠学语言），这是叙者为读者补充的评价，而非纯客观展示。",
+        "fix_hint": "删除'却'字和后半句评价，改为纯视觉展示：'他看着自己的钱包，然后看向镜子里的自己。'或'他看着自己的钱包，指尖点了点屏幕上的数字。'，让陈默的焦虑和犹豫通过动作而非叙述者评价来呈现。",
+        "blocking": false
+      },
+      {
+        "severity": "medium",
+        "category": "ai_flavor",
+        "location": "第79行",
+        "description": "情感用标签化语言表达，直接陈述心理状态而非通过行为暗示。",
+        "evidence": "原文：'而现在，那个信任压得他有些喘不过气。'。这是对情感的直接标签化描写，读者无法看到陈默如何被'压得喘不过气'——是僵硬坐着、深呼吸、拳头紧握，还是别的？",
+        "fix_hint": "用生理反应替代标签：'而现在，每想到父母的期待，他的呼吸都会变浅。'或'他突然屏住了呼吸，直到肺部开始刺痛。'，用具体的身体感觉代替抽象的心理陈述。",
+        "blocking": false
+      },
+      {
+        "severity": "medium",
+        "category": "continuity",
+        "location": "第1章末 vs 第2章整体",
+        "description": "第1章结尾强调'是作为一个想活下去的人'的决心，但第2章正文主体被群聊信息填满，无法展现陈默对'活下去'这一承诺的具体困境或内部冲突。",
+        "evidence": "第1章第86行：'是作为一个想活下去的人。'。第2章整个章节（约2000字）中，群聊占约1500字，陈默的内观只有第45段（镜子）、第79段（父母信任）、第82行（支付宝推送）。这导致读者无法感受到陈默落地后的真实焦虑——只看到外部市场信息的冲击。",
+        "fix_hint": "在群聊前或群聊中穿插陈默的实时心理转变：为什么看到日本机会后开始动摇？为什么看到融资需求后感到恐慌？用陈默的选择困境而非市场信息来推进情节。",
+        "blocking": false
+      },
+      {
+        "severity": "medium",
+        "category": "ai_flavor",
+        "location": "第77行",
+        "description": "节奏匀速且段落句式结构重复，容易形成AI生成的'段落模板感'。",
+        "evidence": "整个章节的段落结构：叙述→群聊→叙述→群聊→内观。第45段（镜子+自我观察）、第77段（眼皮后残影）、第82行（支付宝推送）都采取相同的'视觉刺激→心理回应'结构。段落长度从3行到20行，信息密度差异不大，整体读感像在均匀推进背景设定而非在讲故事。",
+        "fix_hint": "变化段落长短、调整信息密度。群聊信息若要保留，可改为零碎片段（只看1-2条，然后切出陈默的反应，再看3-5条）而不是连贯的30行群聊。同时确保内观段落有质的不同——某些段落应该短而冲击（1-2句），某些段落长而沉浸（5-10句），而非均匀分布。",
+        "blocking": false
+      },
+      {
+        "severity": "medium",
+        "category": "ai_flavor",
+        "location": "第11-18行、第34-39行",
+        "description": "问-答-问-答的对话链形成机械式信息传输，缺乏真实的交流张力。",
+        "evidence": "第11-18行：质疑→纠正→新问题→终局。第34-39行：提议→疑问→回答→反应。这是典型的教学式对话，一方不断提问，另一方逐步答疑，目的是将信息灌入读者脑中，而非推进人物之间的冲突或决策。",
+        "fix_hint": "打破问-答链。在对话中引入真实分歧或个人风格：有人在质疑和纠正之间产生情绪（'我就是不信'），有人用方言或粗口表达焦虑（不只是'别想了'，还有'他妈的这是要把我们都逼出国啊'），有人的回答涉及个人利益冲突而非单纯的事实陈述。",
+        "blocking": false
+      }
+    ],
+    "summary": "6个问题：0个阻断，4个高优先级。主要集中在AI味（群聊信息宣讲、情感标签化、句式重复）和连贯性（第1章钩子未充分回应）。无设定矛盾、无明显时间线错误、无角色知识越界。",
+    "recommendation": "no_blocking"
+  },
+  "fulfillment_result": {
+    "planned_nodes": [
+      "陈默到达大阪酒店",
+      "陈默查看微信群讨论",
+      "陈默发现机器升级消息",
+      "陈默思考融资机会",
+      "陈默与张凯沟通",
+      "陈默做出投资决定"
+    ],
+    "covered_nodes": [
+      "陈默到达大阪酒店",
+      "陈默查看微信群讨论",
+      "陈默发现机器升级消息",
+      "陈默思考融资机会",
+      "陈默与张凯沟通",
+      "陈默做出投资决定"
+    ],
+    "missed_nodes": [],
+    "extra_nodes": []
+  },
+  "disambiguation_result": {
+    "pending": []
+  },
+  "accepted_events": [
+    {
+      "event_id": "evt-ch2-001",
+      "chapter": 2,
+      "event_type": "character_state_changed",
+      "subject": "chen_mo",
+      "payload": {
+        "field": "location.current",
+        "old": "中国济南",
+        "new": "日本大阪",
+        "trigger": "陈默已到达大阪日中酒店，确认飞行完成"
+      }
+    },
+    {
+      "event_id": "evt-ch2-002",
+      "chapter": 2,
+      "event_type": "open_loop_created",
+      "subject": "allnet_upgrade_window",
+      "payload": {
+        "content": "AllNet新系统升级将带来两个月时间窗口，乌蒙国内版本彻底停更，日本仍有机会。这个窗口内的融资和机器部署能力决定后续竞争格局",
+        "loop_type": "市场机遇窗口",
+        "unanswered_question": "陈默能否在两个月窗口内完成融资和机器部署？",
+        "urgency": "极高",
+        "expected_payoff": "后续章节创业行动"
+      }
+    },
+    {
+      "event_id": "evt-ch2-003",
+      "chapter": 2,
+      "event_type": "open_loop_created",
+      "subject": "fusion_round_decision",
+      "payload": {
+        "content": "微博商人A发起500万人民币融资方案，预期回报40个点。陈默账户持有300万，是否参与融资决策成为关键",
+        "loop_type": "融资机遇",
+        "unanswered_question": "陈默会否投资融资方案？如何与其他玩家竞争？",
+        "urgency": "高",
+        "expected_payoff": "融资合作或独立创业选择的确定"
+      }
+    },
+    {
+      "event_id": "evt-ch2-004",
+      "chapter": 2,
+      "event_type": "relationship_changed",
+      "subject": "chen_mo",
+      "payload": {
+        "to_entity": "zhang_kai",
+        "relationship_type": "搭档确认",
+        "change": "通过发送'到'字确认已到日本，暗示准备行动",
+        "significance": "陈默打破沉默，向张凯确认赴日，标志决策已定"
+      }
+    },
+    {
+      "event_id": "evt-ch2-005",
+      "chapter": 2,
+      "event_type": "character_state_changed",
+      "subject": "chen_mo",
+      "payload": {
+        "field": "commitment_level",
+        "old": "计划阶段",
+        "new": "已付诸行动",
+        "detail": "陈默到达日本，投入300万资本，时差混乱中做出投资决策"
+      }
+    }
+  ],
+  "state_deltas": [
+    {
+      "entity_id": "chen_mo",
+      "field": "location.current",
+      "old": "中国济南",
+      "new": "日本大阪"
+    },
+    {
+      "entity_id": "chen_mo",
+      "field": "status",
+      "old": "观望者",
+      "new": "决策者"
+    },
+    {
+      "entity_id": "chen_mo",
+      "field": "commitment_level",
+      "old": "考虑中",
+      "new": "已到达目标地"
+    }
+  ],
+  "entity_deltas": [
+    {
+      "entity_id": "chen_mo",
+      "action": "upsert",
+      "entity_type": "角色",
+      "is_protagonist": true,
+      "payload": {
+        "name": "陈默",
+        "status": "已到达日本大阪，面临融资决策",
+        "account_balance_cny": 3000000,
+        "location": "大阪日中酒店",
+        "timezone_condition": "时差颠倒，生物钟紊乱"
+      }
+    },
+    {
+      "entity_id": "zhang_kai",
+      "action": "upsert",
+      "entity_type": "角色",
+      "payload": {
+        "name": "张凯",
+        "relationship_to_protagonist": "搭档、在日本",
+        "status": "支持但担心",
+        "last_message": "已买机票？"
+      }
+    }
+  ],
+  "entities_appeared": [
+    {
+      "id": "chen_mo",
+      "type": "角色",
+      "mentions": [
+        "陈默"
+      ],
+      "confidence": 0.99
+    },
+    {
+      "id": "zhang_kai",
+      "type": "角色",
+      "mentions": [
+        "张凯"
+      ],
+      "confidence": 0.99
+    },
+    {
+      "id": "weibo_merchant_a",
+      "type": "角色",
+      "mentions": [
+        "微博商人A"
+      ],
+      "confidence": 0.75,
+      "note": "融资方，微博认证用户，融资规模五百万人民币起"
+    },
+    {
+      "id": "forum_arcade_master",
+      "type": "角色",
+      "mentions": [
+        "论坛机器大佬"
+      ],
+      "confidence": 0.7,
+      "note": "群聊中的资深玩家，讨论机器供货渠道"
+    }
+  ],
+  "scenes": [
+    {
+      "index": 1,
+      "start_line": 1,
+      "end_line": 27,
+      "location": "大阪日中酒店房间",
+      "summary": "陈默抵达日本后时差颠倒，查看微信群里的停更消息和技术文档讨论",
+      "characters": [
+        "chen_mo"
+      ],
+      "content": "设置了故事场景的地点和主角的困境"
+    },
+    {
+      "index": 2,
+      "start_line": 28,
+      "end_line": 43,
+      "location": "大阪日中酒店房间",
+      "summary": "陈默看到微博商人A的融资方案，面对300万创业资本的承诺和现实选择",
+      "characters": [
+        "chen_mo"
+      ],
+      "content": "核心冲突：资本压力与决策困境"
+    },
+    {
+      "index": 3,
+      "start_line": 44,
+      "end_line": 70,
+      "location": "大阪日中酒店房间",
+      "summary": "陈默与张凯私聊，确认已到日本，群里讨论选址、工作签证等运营细节",
+      "characters": [
+        "chen_mo",
+        "zhang_kai"
+      ],
+      "content": "人物关系推进与行业信息碰撞"
+    },
+    {
+      "index": 4,
+      "start_line": 71,
+      "end_line": 84,
+      "location": "大阪日中酒店房间、大阪街道",
+      "summary": "陈默最终向张凯发送'到'字确认承诺，躺回床上面对大阪的晨光，表示决策已定",
+      "characters": [
+        "chen_mo"
+      ],
+      "content": "收尾钩子：主角的沉默确认和心理定位"
+    }
+  ],
+  "chapter_meta": {},
+  "dominant_strand": "quest",
+  "summary_text": "陈默到达大阪日中酒店，时差颠倒难眠。他发现微信群里乌蒙圈正因AllNet升级而陷入产业剧变：国内版本彻底停更，日本仍有两个月运营窗口。微博商人A发起500万融资方案，预期回报40个点，引发群内激烈讨论。陈默手握300万创业资本，在深夜迷茫与决策中摇摆。最终他向张凯发送'到'字，确认赴日承诺已定，隐含着投资决策的开始。整个产业如同失控列车，所有玩家被迫在窗口期内选择跳车或前行。",
+  "projection_status": {
+    "state": "done",
+    "index": "done",
+    "summary": "done",
+    "memory": "done",
+    "vector": "skipped"
+  }
+}

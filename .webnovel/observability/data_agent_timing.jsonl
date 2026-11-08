@@ -1,0 +1,4 @@
+{"timestamp": "2026-05-16T23:15:48.437975", "tool_name": "index_manager:get-core-entities", "success": true, "elapsed_ms": 3}
+{"timestamp": "2026-05-16T23:15:48.971070", "tool_name": "index_manager:recent-appearances", "success": true, "elapsed_ms": 3}
+{"timestamp": "2026-05-16T23:48:29.572034", "tool_name": "index_manager:get-core-entities", "success": true, "elapsed_ms": 4}
+{"timestamp": "2026-05-16T23:48:30.156305", "tool_name": "index_manager:recent-appearances", "success": true, "elapsed_ms": 3}

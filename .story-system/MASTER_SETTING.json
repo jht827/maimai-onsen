@@ -1,0 +1,121 @@
+{
+  "meta": {
+    "schema_version": "story-system/v1",
+    "contract_type": "MASTER_SETTING",
+    "generator_version": "phase1",
+    "query": "陈默收拾行李出门，给父母打电话隐瞒赴日真实原因，只说看市场机会，感受到对父母的内疚和300万资金的责任压力，飞机起飞前最后的犹豫确认"
+  },
+  "route": {
+    "primary_genre": "都市异能",
+    "canonical_genre": "都市",
+    "route_source": "keyword_or_alias_match",
+    "genre_filter": "都市",
+    "recommended_base_tables": [
+      "金手指与设定",
+      "场景写法",
+      "人设与关系"
+    ],
+    "recommended_dynamic_tables": [
+      "爽点与节奏",
+      "桥段套路",
+      "场景写法"
+    ]
+  },
+  "master_constraints": {
+    "core_tone": "现代秩序下的能力反差",
+    "pacing_strategy": "三章内展示能力代价与首次实战"
+  },
+  "base_context": [
+    {
+      "编号": "SP-005",
+      "适用技能": "write|plan",
+      "分类": "场景",
+      "层级": "知识补充",
+      "关键词": "日常场景|群像互动|生活流|轻松场景",
+      "意图与同义词": "日常场景怎么写|群像日常怎么不水|生活流场景怎么写",
+      "适用题材": "全部",
+      "大模型指令": "先给角色安排具体活动，再把对话、伏笔和关系变化嵌进动作流程，避免一群人站桩聊天。",
+      "核心摘要": "日常群像场景要靠做饭、收拾、分赃等活动承载对话，让轻松戏也能推进关系和伏笔。",
+      "详细展开": "关键是给每个人不同的参与方式和小动作，让说话、沉默、失误、观察都变成信息，而不是单纯填充字数。",
+      "场景类型": "日常场景",
+      "模式名称": "活动嵌入式群像日常",
+      "说明": "通过具体活动承托闲聊和人物关系变化，让轻松场景也具备明确功能。",
+      "示例片段": "锅里油花一响，向来嘴硬的二师兄先把最好的一块肉夹进她碗里，嘴上却只说别拖后腿。",
+      "毒点": "一群人围坐闲聊整章，既没有具体活动也没有信息推进。",
+      "_table": "场景写法",
+      "_priority_rank": 2,
+      "_reasoning_rule": "都市",
+      "_chapter_keyword_score": 0,
+      "_combined_rank_score": 0.333333
+    },
+    {
+      "编号": "SP-005",
+      "适用技能": "write|plan",
+      "分类": "场景",
+      "层级": "知识补充",
+      "关键词": "日常场景|群像互动|生活流|轻松场景",
+      "意图与同义词": "日常场景怎么写|群像日常怎么不水|生活流场景怎么写",
+      "适用题材": "全部",
+      "大模型指令": "先给角色安排具体活动，再把对话、伏笔和关系变化嵌进动作流程，避免一群人站桩聊天。",
+      "核心摘要": "日常群像场景要靠做饭、收拾、分赃等活动承载对话，让轻松戏也能推进关系和伏笔。",
+      "详细展开": "关键是给每个人不同的参与方式和小动作，让说话、沉默、失误、观察都变成信息，而不是单纯填充字数。",
+      "场景类型": "日常场景",
+      "模式名称": "活动嵌入式群像日常",
+      "说明": "通过具体活动承托闲聊和人物关系变化，让轻松场景也具备明确功能。",
+      "示例片段": "锅里油花一响，向来嘴硬的二师兄先把最好的一块肉夹进她碗里，嘴上却只说别拖后腿。",
+      "毒点": "一群人围坐闲聊整章，既没有具体活动也没有信息推进。",
+      "_table": "场景写法",
+      "_priority_rank": 2,
+      "_reasoning_rule": "都市",
+      "_chapter_keyword_score": 0,
+      "_combined_rank_score": 0.333333
+    }
+  ],
+  "source_trace": [
+    {
+      "table": "题材与调性推理",
+      "id": "GR-010",
+      "reason": "keyword_or_alias_match"
+    },
+    {
+      "table": "场景写法",
+      "id": "SP-005",
+      "summary": "日常群像场景要靠做饭、收拾、分赃等活动承载对话，让轻松戏也能推进关系和伏笔。",
+      "reasoning_rule": "都市",
+      "priority_rank": 2,
+      "chapter_keyword_score": 0,
+      "combined_rank_score": 0.333333,
+      "inject_target": "CHAPTER_BRIEF.writing_guidance"
+    },
+    {
+      "table": "场景写法",
+      "id": "SP-005",
+      "summary": "日常群像场景要靠做饭、收拾、分赃等活动承载对话，让轻松戏也能推进关系和伏笔。",
+      "reasoning_rule": "都市",
+      "priority_rank": 2,
+      "chapter_keyword_score": 0,
+      "combined_rank_score": 0.333333,
+      "inject_target": "CHAPTER_BRIEF.writing_guidance"
+    },
+    {
+      "table": "金手指与设定",
+      "id": "SY-042",
+      "summary": "金手指获取方式决定了它的命运感、偶然感和是否会引来别人觊觎。",
+      "reasoning_rule": "都市",
+      "priority_rank": 999,
+      "chapter_keyword_score": 0,
+      "combined_rank_score": 0.0,
+      "inject_target": "CHAPTER_BRIEF.writing_guidance"
+    }
+  ],
+  "override_policy": {
+    "locked": [
+      "route.primary_genre",
+      "master_constraints.core_tone"
+    ],
+    "append_only": [
+      "anti_patterns"
+    ],
+    "override_allowed": []
+  }
+}

@@ -1,0 +1,64 @@
+[
+  {
+    "event_id": "evt-ch2-001",
+    "chapter": 2,
+    "event_type": "character_state_changed",
+    "subject": "chen_mo",
+    "payload": {
+      "field": "location.current",
+      "old": "中国济南",
+      "new": "日本大阪",
+      "trigger": "陈默已到达大阪日中酒店，确认飞行完成"
+    }
+  },
+  {
+    "event_id": "evt-ch2-002",
+    "chapter": 2,
+    "event_type": "open_loop_created",
+    "subject": "allnet_upgrade_window",
+    "payload": {
+      "content": "AllNet新系统升级将带来两个月时间窗口，乌蒙国内版本彻底停更，日本仍有机会。这个窗口内的融资和机器部署能力决定后续竞争格局",
+      "loop_type": "市场机遇窗口",
+      "unanswered_question": "陈默能否在两个月窗口内完成融资和机器部署？",
+      "urgency": "极高",
+      "expected_payoff": "后续章节创业行动"
+    }
+  },
+  {
+    "event_id": "evt-ch2-003",
+    "chapter": 2,
+    "event_type": "open_loop_created",
+    "subject": "fusion_round_decision",
+    "payload": {
+      "content": "微博商人A发起500万人民币融资方案，预期回报40个点。陈默账户持有300万，是否参与融资决策成为关键",
+      "loop_type": "融资机遇",
+      "unanswered_question": "陈默会否投资融资方案？如何与其他玩家竞争？",
+      "urgency": "高",
+      "expected_payoff": "融资合作或独立创业选择的确定"
+    }
+  },
+  {
+    "event_id": "evt-ch2-004",
+    "chapter": 2,
+    "event_type": "relationship_changed",
+    "subject": "chen_mo",
+    "payload": {
+      "to_entity": "zhang_kai",
+      "relationship_type": "搭档确认",
+      "change": "通过发送'到'字确认已到日本，暗示准备行动",
+      "significance": "陈默打破沉默，向张凯确认赴日，标志决策已定"
+    }
+  },
+  {
+    "event_id": "evt-ch2-005",
+    "chapter": 2,
+    "event_type": "character_state_changed",
+    "subject": "chen_mo",
+    "payload": {
+      "field": "commitment_level",
+      "old": "计划阶段",
+      "new": "已付诸行动",
+      "detail": "陈默到达日本，投入300万资本，时差混乱中做出投资决策"
+    }
+  }
+]

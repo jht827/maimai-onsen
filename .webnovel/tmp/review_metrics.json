@@ -1,0 +1,34 @@
+{
+  "chapter": 2,
+  "start_chapter": 2,
+  "end_chapter": 2,
+  "overall_score": 82.0,
+  "dimension_scores": {
+    "continuity": 92.0,
+    "setting": 100.0,
+    "character": 100.0,
+    "timeline": 100.0,
+    "ai_flavor": 94.0,
+    "logic": 98.0,
+    "pacing": 100.0,
+    "other": 98.0
+  },
+  "severity_counts": {
+    "critical": 0,
+    "high": 0,
+    "medium": 2,
+    "low": 3
+  },
+  "critical_issues": [],
+  "report_file": "/Users/jerry/shuangwen-cc/乌蒙停更后我在日本开温泉机厅/审查报告/第0002章审查报告.md",
+  "notes": "5个问题：0个阻断，3个高优（AI味重复、时间线模糊、叙事生硬），2个低优（逻辑不严谨但符合角色设定、缺日期标记）。本章整体结构清晰，角色设定一致，但存在词汇层和叙事层的细微AI味问题需要打磨。 | issues=5 | blocking=0 | categories=ai_flavor,continuity,logic,other",
+  "issues_count": 5,
+  "blocking_count": 0,
+  "categories": [
+    "ai_flavor",
+    "continuity",
+    "logic",
+    "other"
+  ],
+  "timestamp": "2026-05-16T23:15:36"
+}

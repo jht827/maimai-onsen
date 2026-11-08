@@ -1,0 +1,102 @@
+{
+  "project_info": {
+    "title": "乌蒙停更后我在日本开温泉机厅",
+    "genre": "都市异能+硬核经营+创业",
+    "created_at": "2026-05-16",
+    "target_words": 500000,
+    "target_chapters": 180,
+    "golden_finger_name": "网络/硬件系统能力",
+    "golden_finger_type": "技术系统",
+    "golden_finger_style": "硬核理工科",
+    "core_selling_points": "硬核经营+乌蒙圈真实细节+日本创业+跨海技术突破",
+    "protagonist_structure": "单主角+搭档",
+    "heroine_config": "无女主",
+    "heroine_names": "",
+    "heroine_role": "",
+    "co_protagonists": "张凯",
+    "co_protagonist_roles": "商业运营搭档",
+    "antagonist_tiers": "商业规则限制+市场压力+技术难度",
+    "world_scale": "中日两地",
+    "factions": "乌蒙圈玩家+机厅老板+日本官方渠道+资本跟风者",
+    "power_system_type": "商业生态+技术方案",
+    "social_class": "理工创业者+乌蒙圈从业者+日本市场方",
+    "resource_distribution": "资金+技术+信息差+人脉",
+    "gf_visibility": "主角+搭档深知，逐步向市场展现",
+    "gf_irreversible_cost": "资金投入300万起+时间成本+心理压力+失败风险",
+    "target_reader": "乌蒙圈玩家+硬核经营文爱好者+创业话题关注者",
+    "platform": "网络文学平台",
+    "currency_system": "日元+人民币+等价交换",
+    "currency_exchange": "机器价格+房产估值+运营成本",
+    "sect_hierarchy": "无修仙体系，改为商业阶层",
+    "cultivation_chain": "无",
+    "cultivation_subtiers": "无"
+  },
+  "progress": {
+    "current_chapter": 2,
+    "total_words": 1817,
+    "last_updated": "2026-05-16 23:50:18",
+    "volumes_completed": [],
+    "current_volume": 1,
+    "volumes_planned": [],
+    "chapter_status": {
+      "2": "chapter_committed"
+    }
+  },
+  "protagonist_state": {
+    "name": "陈默",
+    "power": {
+      "realm": "",
+      "layer": 1,
+      "bottleneck": ""
+    },
+    "location": {
+      "current": "日本大阪",
+      "last_chapter": 0
+    },
+    "golden_finger": {
+      "name": "网络/硬件系统能力",
+      "level": 1,
+      "cooldown": 0,
+      "skills": []
+    },
+    "attributes": {},
+    "status": "决策者",
+    "commitment_level": "已到达目标地"
+  },
+  "relationships": {},
+  "disambiguation_warnings": [],
+  "disambiguation_pending": [],
+  "world_settings": {
+    "power_system": [],
+    "factions": [],
+    "locations": []
+  },
+  "plot_threads": {
+    "active_threads": [],
+    "foreshadowing": []
+  },
+  "review_checkpoints": [],
+  "chapter_meta": {},
+  "strand_tracker": {
+    "last_quest_chapter": 2,
+    "last_fire_chapter": 0,
+    "last_constellation_chapter": 0,
+    "current_dominant": "quest",
+    "chapters_since_switch": 1,
+    "history": [
+      {
+        "chapter": 2,
+        "dominant": "quest"
+      }
+    ]
+  },
+  "entity_state": {
+    "chen_mo": {
+      "location": {
+        "current": "日本大阪"
+      },
+      "status": "决策者",
+      "commitment_level": "已到达目标地"
+    }
+  }
+}

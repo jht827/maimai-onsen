@@ -1,0 +1,33 @@
+{
+  "meta": {
+    "schema_version": "story-system/v1",
+    "contract_type": "REVIEW_CONTRACT",
+    "generator_version": "phase2",
+    "source_trace": []
+  },
+  "must_check": [],
+  "blocking_rules": [],
+  "genre_specific_risks": [
+    "都市异能"
+  ],
+  "anti_patterns": [
+    "异能无代价",
+    "现代秩序消失",
+    "战斗后没有后果",
+    "情感靠标签",
+    "日常无冲突",
+    "角色千人一面"
+  ],
+  "system_constraints": [
+    "现代秩序下的能力反差"
+  ],
+  "review_thresholds": {
+    "blocking_count": 0,
+    "missed_nodes": 0
+  },
+  "overrides": {
+    "locked": {},
+    "append_only": {},
+    "override_allowed": {}
+  }
+}
